@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meet the Team | Beyond Adversity BTC Podcast</title>
+  <style>
+    /* GENERAL RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('./assets/images/logo.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    nav img {
+      width: 70px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* TEAM SECTION */
+    .team-section {
+      margin-top: 80px;
+      background: rgba(19, 4, 4, 0.95);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .team-section h1 {
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #FFC727;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .team-member {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 250px;
+      max-width: 300px;
+    }
+
+    .team-member img {
+      border-radius: 50%;
+      width: 180px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+
+    .team-member h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .team-member p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: white;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .team-members {
+        justify-content: center;
+      }
+    }
+    p{
+      font-style: larger;
+      font-size: large;
+      text-size-adjust: 25px;
+
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="bap.html">
+        <img src="./assets/images/logo.png" alt="Logo">
+      </a>
+      <ul>
+        <li><a href="bap.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="club.html">Join Book Club</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h1>Meet the Team</h1>
+    <div class="team-members">
+      <!-- Team Member 1 -->
+      <div class="team-member">
+        <img src="./assets/images/service-2.png" alt="Alfonce Ouma">
+        <h3>Alfonce Ouma</h3>
+        <b><p>Founder & Host</p></b>
+        <b><p>Visionary storyteller and BTC advocate, Alfonce founded the podcast to spotlight untold stories of resilience and growth across Africa.</p></b>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="team-member">
+        <img src="./assets/images/service-3.png" alt="Phelix Mreggy">
+        <h3>Phelix Mreggy</h3>
+        <b> <p>Head of Content Production</p></b>
+        <b> <p>Master of sound and soul, Phelix ensures every episode hits deep, delivering clarity, depth, and authenticity.</p></b>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="team-member">
+        <img src="./assets/images/service-1.png" alt="Suleiman Yusuf">
+        <h3>Suleiman Yusuf</h3>
+        <b><p>Chairperson</p></b>
+        <b><p>A strategist and leader, Suleiman brings vision, structure, and purpose to the Beyond Adversity journey.</p></b>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div class="team-member">
+        <img src="./assets/images/testi-avatar.png" alt="Grace Ayuma">
+        <h3>Grace Ayuma</h3>
+        <b><p>Head of Tech</p></b>
+        <b><p>Tech architect and digital pioneer, Grace ensures our platform runs seamlessly and securely for all listeners.</p></b>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer>
+    <p>&copy; 2025 Beyond Adversity BTC Podcast. All Rights Reserved.</p>
+  </footer> -->
+
+</div>
+
+</body>
+</html>

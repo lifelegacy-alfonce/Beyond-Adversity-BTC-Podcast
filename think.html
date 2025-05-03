@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Think Tank | Beyond Adversity</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #0d0d0d url('images/logo.png') no-repeat center center fixed;
+      background-size: 300px; /* Adjust size as needed */
+      color: #ccc; /* light text color */
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background-color: rgba(13, 13, 13, 0.9); /* slight transparency */
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .idea-card {
+      background: rgba(26, 26, 26, 0.95);
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .idea-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    }
+    .idea-title {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .idea-description {
+      color: #aaa;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    .connect-button {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .connect-button:hover {
+      background: #1d4ed8;
+    }
+    #connect {
+      background: rgba(17, 17, 17, 0.95);
+      border-radius: 12px;
+      padding: 40px 20px;
+      margin-top: 80px;
+      text-align: center;
+    }
+    #connect h2 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    #connect p {
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 14px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      background: #222;
+      color: #eee;
+    }
+    form button {
+      background: #2563eb;
+      color: #fff;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #1d4ed8;
+    }
+    footer {
+      background: rgba(13, 13, 13, 0.9);
+      color: #777;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    nav img {
+        width: 100px;
+        height: auto;
+        margin-right: 50px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        margin: 0 15px;
+        cursor: pointer;
+        font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <img src="images/logo.png" alt="Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+  <h1>Beyond Adversity Think Tank</h1>
+  <p>Incubating Ideas | Connecting Innovators & Investors</p>
+</header>
+
+<div class="container">
+
+  <div class="idea-card">
+    <h2 class="idea-title">Decentralized Microloans for Entrepreneurs</h2>
+    <p class="idea-description">
+      A blockchain-powered platform enabling entrepreneurs in underserved communities to access small-scale funding without intermediaries.
+    </p>
+    <a href="#connect" class="connect-button">Connect with Us</a>
+  </div>
+
+  <div class="idea-card">
+    <h2 class="idea-title">AI-Driven Mental Health Companion</h2>
+    <p class="idea-description">
+      An AI-based app offering real-time emotional support, personalized resilience training, and connection to professional help when needed.
+    </p>
+    <a href="#connect" class="connect-button">Connect with Us</a>
+  </div>
+
+  <div class="idea-card">
+    <h2 class="idea-title">Bitcoin Education for Emerging Markets</h2>
+    <p class="idea-description">
+      A mobile-first platform educating communities about Bitcoin, financial sovereignty, and how to build wealth in decentralized ecosystems.
+    </p>
+    <a href="#connect" class="connect-button">Connect with Us</a>
+  </div>
+
+</div>
+
+<section id="connect" class="container">
+  <h2>Invest in the Future</h2>
+  <p>Want to connect with one of these ideas? Submit your interest below:</p>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Interest</button>

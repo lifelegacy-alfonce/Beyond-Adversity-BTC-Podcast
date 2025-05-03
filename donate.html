@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate | Beyond Adversity BTC Podcast</title>
+  <style>
+    /* GENERAL RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('./assets/images/logo.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    nav img {
+      width: 70px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    #buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    #buttons button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* DONATE SECTION */
+    .donate-section {
+      margin-top: 80px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .donate-section h1 {
+      font-size: 40px;
+      color: #FFC727;
+      margin-bottom: 20px;
+    }
+
+    .donate-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .qr-code {
+      margin: 30px 0;
+    }
+
+    .qr-code img {
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+    }
+
+    .btc-address {
+      font-size: 16px;
+      word-break: break-all;
+      margin-top: 20px;
+      color: #000;
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: white;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .donate-section {
+        padding: 20px;
+      }
+      .qr-code img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="bap.html">
+        <img src="./assets/images/logo.png" alt="Logo">
+      </a>
+      <ul>
+        <li><a href="bap.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="club.html">Join Book Club</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="team.html">Team</a></li> <!-- Added the team link -->
+        <li><a href="donate.html">Donate</a></li> <!-- Current page -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Donate Section -->
+  <section class="donate-section">
+    <h1>DONATE IN BITCOIN</h1>
+    <p>
+      Support the Beyond Adversity BTC Podcast in empowering resilient Bitcoiners around the world.<br>
+      Your generous contribution helps us share stories, knowledge, and inspiration with a global audience.<br>
+      Thank you for your support!
+    </p>
+
+    <div class="qr-code">
+      <img src="./assets/images/hero-icon.png" alt="Donate Bitcoin QR Code">
+    </div>
+
+    <div class="btc-address">
+      <strong>Bitcoin Address:</strong><br>
+      bapbtc@blink.sv
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Beyond Adversity BTC Podcast. All Rights Reserved.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
