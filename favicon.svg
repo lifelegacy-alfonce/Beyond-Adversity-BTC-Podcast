@@ -1,3 +1,5 @@
-<!-- In your HTML head section -->
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+<svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Replace #E4C590 with your color -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5132..." fill="#3A7BFF"/>
+  <path d="M38.7607..." fill="#3A7BFF"/>
+</svg>
