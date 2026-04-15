@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us | Beyond Adversity BTC Podcast</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="/favicon.ico" type="image/x-icon">
+  <title>About Us | Beyond Adversity BTC Podcast</title>
 
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <style>
-    /* GENERAL RESET */
     * {
       margin: 0;
       padding: 0;
@@ -22,7 +20,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       min-height: 100vh;
-      color: #333;
     }
 
     .container {
@@ -31,13 +28,13 @@
       padding: 20px;
     }
 
-    /* HEADER */
+    /* NAVBAR */
     header {
+      background: black;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
+      padding: 15px 20px;
       border-radius: 10px;
     }
 
@@ -57,214 +54,216 @@
       gap: 30px;
     }
 
-    nav ul li {
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
     nav ul li a {
       text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
-
-    #buttons {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    #buttons button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 50px;
-      background-color: black;
       color: white;
-      cursor: pointer;
       font-weight: bold;
-      font-size: 14px;
+      transition: 0.3s;
     }
 
-    /* CONTACT FORM */
-    .contact-section {
-      margin-top: 80px;
-      background: rgba(255, 255, 255, 0.95);
+    nav ul li a:hover {
+      color: #FFC727;
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+      margin-top: 50px;
+      background: rgba(255,255,255,0.95);
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
       text-align: center;
     }
 
-    .contact-section h1 {
-      margin-bottom: 30px;
+    .about-section h1 {
       font-size: 36px;
       color: #FFC727;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto 15px auto;
+    }
+
+    /* TEAM SECTION */
+    .team-section {
+      margin-top: 40px;
+      background: rgba(255,255,255,0.95);
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .team-member {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    /* CONTACT */
+    .contact-section {
+      margin-top: 40px;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
     }
 
     form {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
     }
 
-    .form-group {
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    input, textarea, select {
-      padding: 15px;
-      font-size: 16px;
-      border-radius: 8px;
+    input, textarea {
+      padding: 12px;
       border: 1px solid #ccc;
-      width: 100%;
+      border-radius: 8px;
     }
 
-    textarea {
-      resize: vertical;
-      min-height: 150px;
-    }
-
-    .checkbox-group {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-align: left;
-    }
-
-    .checkbox-group label {
-      font-weight: normal;
-    }
-
-    button.submit-btn {
-      background-color: #007bff;
+    button {
+      background: black;
       color: white;
-      font-size: 18px;
       padding: 12px;
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-      width: 200px;
-      margin: 20px auto 0;
+      font-weight: bold;
     }
 
-    button.submit-btn:hover {
-      background-color: #0056b3;
+    button:hover {
+      background: #FFC727;
+      color: black;
     }
 
-    /* FOOTER */
     footer {
       text-align: center;
-      margin-top: 50px;
-      font-size: 14px;
+      margin-top: 40px;
       color: white;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-      }
-      nav ul {
-        flex-direction: column;
-        gap: 15px;
-      }
-      .contact-section {
-        padding: 20px;
-      }
+      padding: 20px;
     }
   </style>
 </head>
+
 <body>
 
 <div class="container">
 
-  <!-- Header -->
+  <!-- NAVBAR -->
   <header>
     <nav>
       <a href="index.html">
         <img src="./assets/images/logo.png" alt="Logo">
       </a>
+
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">About</a></li>
-        <li><a href="club.html">Join Book Club</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="academy.html">BAP Academy</a></li>
+        <li><a href="podcast.html">Watch Our Episodes</a></li>
+        <li><a href="donate.html">Support Our Work</a></li>
       </ul>
     </nav>
-    <!-- <div id="buttons">
-      <button>Sign In</button>
-    </div> -->
   </header>
 
-  <!-- Contact Form Section -->
+  <!-- ABOUT -->
+  <section class="about-section">
+    <h1>About Us</h1>
+
+    <p>
+      Beyond Adversity BTC Podcast is more than just a show — it's a movement. Founded by Alfonce Ouma, the podcast was born out of a passion to uncover the raw, unfiltered stories of individuals who have triumphed over hardship. Whether facing economic barriers, social stigma, or personal trauma, our guests embody resilience and determination.
+    </p>
+
+    <p>
+      Powered by Bitcoin values of freedom, innovation, and decentralization, we spotlight African voices and global changemakers who are reshaping their lives and communities. Through bold conversations and emotional truths, we amplify the human spirit one episode at a time.
+    </p>
+
+    <p>
+      Join us in breaking silence, building strength, and going beyond adversity.
+    </p>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <h2>Meet the Team</h2>
+
+    <div class="team-members">
+
+      <div class="team-member">
+        <img src="./assets/images/service-2.png">
+        <h3>Alfonce Ouma</h3>
+        <p>Founder & Host</p>
+      </div>
+
+      <div class="team-member">
+        <img src="./assets/images/service-3.png">
+        <h3>Phelix Mreggy</h3>
+        <p>Head of Production</p>
+      </div>
+
+      <div class="team-member">
+        <img src="./assets/images/service-1.png">
+        <h3>Suleiman Yusuf</h3>
+        <p>Chairperson</p>
+      </div>
+
+      <div class="team-member">
+        <img src="./assets/images/testi-avatar.png">
+        <h3>Grace Ayuma</h3>
+        <p>Head of Tech</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section class="contact-section">
-    <h1>Contact Us</h1>
-    <form action="#" method="POST">
+    <h2>Contact Us</h2>
 
-      <div class="form-group">
-        <label for="name">Full Name *</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-      </div>
+    <form action="https://formspree.io/f/mjgjgeqd" method="POST">
 
-      <div class="form-group">
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-      </div>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-      </div>
-
-      <div class="form-group">
-        <label for="subject">Subject *</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
-      </div>
-
-      <div class="form-group">
-        <label for="hear">How did you hear about us?</label>
-        <select id="hear" name="hear">
-          <option value="">Select an option</option>
-          <option value="social_media">Social Media</option>
-          <option value="friend">Friend/Word of Mouth</option>
-          <option value="search_engine">Google/Search Engine</option>
-          <option value="event">An Event</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-      </div>
-
-<!--       <div class="checkbox-group">
-        <input type="checkbox" id="terms" name="terms" required>
-        <label for="terms">I agree to the Privacy Policy</label>
-      </div> -->
-
-      <button type="submit" class="submit-btn"><a href="contact.html">Send Message</a></button>
+      <button type="submit">Send Message</button>
 
     </form>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Beyond Adversity BTC Podcast. All Rights Reserved.</p>
+    <p>&copy; 2025 Beyond Adversity BTC Podcast</p>
   </footer>
 
 </div>

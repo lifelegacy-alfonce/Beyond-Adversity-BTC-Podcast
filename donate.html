@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Donate | Beyond Adversity BTC Podcast</title>
-   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <style>
-    /* GENERAL RESET */
     * {
       margin: 0;
       padding: 0;
@@ -21,7 +20,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       min-height: 100vh;
-      color: #333;
     }
 
     .container {
@@ -30,13 +28,13 @@
       padding: 20px;
     }
 
-    /* HEADER */
+    /* NAVBAR */
     header {
+      background: black;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
+      padding: 15px 20px;
       border-radius: 10px;
     }
 
@@ -56,148 +54,206 @@
       gap: 30px;
     }
 
-    nav ul li {
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    #buttons {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    #buttons button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 50px;
-      background-color: black;
+    nav ul li a {
+      text-decoration: none;
       color: white;
-      cursor: pointer;
       font-weight: bold;
-      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #FFC727;
     }
 
     /* DONATE SECTION */
     .donate-section {
-      margin-top: 80px;
-      background: rgba(255, 255, 255, 0.95);
+      margin-top: 50px;
+      background: rgba(255,255,255,0.96);
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
       text-align: center;
     }
 
     .donate-section h1 {
       font-size: 40px;
       color: #FFC727;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .donate-section p {
       font-size: 18px;
       line-height: 1.6;
-      margin-bottom: 30px;
-      color: #555;
+      color: #444;
+      margin-bottom: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
+    /* SECTIONS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* LINKS */
+    .links {
+      margin-top: 25px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 50px;
+      background: black;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #FFC727;
+      color: black;
+    }
+
+    /* QR */
     .qr-code {
-      margin: 30px 0;
+      margin-top: 30px;
     }
 
     .qr-code img {
-      width: 250px;
-      height: 250px;
+      width: 220px;
+      height: 220px;
       object-fit: contain;
     }
 
     .btc-address {
-      font-size: 16px;
-      word-break: break-all;
-      margin-top: 20px;
-      color: #000;
+      margin-top: 15px;
       background: #f4f4f4;
       padding: 10px;
       border-radius: 8px;
+      word-break: break-all;
+      font-weight: bold;
     }
 
     /* FOOTER */
     footer {
       text-align: center;
-      margin-top: 50px;
-      font-size: 14px;
+      margin-top: 40px;
       color: white;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-      }
-      nav ul {
-        flex-direction: column;
-        gap: 15px;
-      }
-      .donate-section {
-        padding: 20px;
-      }
-      .qr-code img {
-        width: 200px;
-        height: 200px;
-      }
+      padding: 20px;
     }
   </style>
 </head>
+
 <body>
 
 <div class="container">
 
-  <!-- Header -->
+  <!-- NAVBAR -->
   <header>
     <nav>
       <a href="index.html">
         <img src="./assets/images/logo.png" alt="Logo">
       </a>
+
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">About</a></li>
-        <li><a href="club.html">Join Book Club</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="team.html">Team</a></li> <!-- Added the team link -->
-        <li><a href="donate.html">Donate</a></li> <!-- Current page -->
+        <li><a href="academy.html">BAP Academy</a></li>
+        <li><a href="podcast.html">Watch Our Episodes</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="donate.html">Support Our Work</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Donate Section -->
+  <!-- DONATION CONTENT -->
   <section class="donate-section">
-    <h1>DONATE IN BITCOIN</h1>
+
+    <h1>Support Our Mission</h1>
+
     <p>
-      Support the Beyond Adversity BTC Podcast in empowering resilient Bitcoiners around the world.<br>
-      Your generous contribution helps us share stories, knowledge, and inspiration with a global audience.<br>
-      Thank you for your support!
+      Beyond Adversity BTC Podcast is building a global movement that empowers individuals through storytelling, Bitcoin education, and real-life resilience.
+      Your support helps us continue amplifying voices from Africa and beyond.
     </p>
 
+    <!-- MISSION / VISION / OBJECTIVES -->
+    <div class="grid">
+
+      <div class="card">
+        <h3>🎯 Mission</h3>
+        <p>
+          To amplify untold stories of resilience and transformation through Bitcoin education, storytelling, and community empowerment.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌍 Vision</h3>
+        <p>
+          A world where individuals, especially in Africa, achieve financial freedom and dignity through decentralized knowledge and Bitcoin adoption.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📌 Objectives</h3>
+        <p>
+          • Educate communities on Bitcoin<br>
+          • Share real-life transformation stories<br>
+          • Build resilient local economies<br>
+          • Empower youth through financial literacy
+        </p>
+      </div>
+
+    </div>
+
+    <!-- LINKS -->
+    <div class="links">
+      <a href="https://geyser.fund/project/beyondadversitybtcpodcastbuildingresilientcommunity?hero=alfonceouma" target="_blank">
+        Donate via Geyser
+      </a>
+
+      <a href="https://x.com/b_adversity" target="_blank">
+        Follow us on X
+      </a>
+    </div>
+
+    <!-- QR CODE -->
     <div class="qr-code">
-      <img src="./assets/images/hero-icon.png" alt="Donate Bitcoin QR Code">
+      <img src="./assets/images/hero-icon.png" alt="Bitcoin QR Code">
     </div>
 
     <div class="btc-address">
-      <strong>Bitcoin Address:</strong><br>
-      bapbtc@blink.sv
+      <strong>Bitcoin Lightning:</strong> bapbtc@blink.sv
     </div>
 
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Beyond Adversity BTC Podcast. All Rights Reserved.</p>
+    <p>&copy; 2025 Beyond Adversity BTC Podcast</p>
   </footer>
 
 </div>

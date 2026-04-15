@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Podcast | Beyond Adversity BTC</title>
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* NAVBAR */
+    header {
+      background: black;
+      padding: 15px 20px;
+      border-radius: 8px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav img {
+      width: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #FFC727;
+    }
+
+    /* PAGE TITLE */
+    .title {
+      text-align: center;
+      margin: 40px 0 10px;
+      font-size: 36px;
+      color: #111;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    /* FEATURED VIDEO */
+    .featured {
+      margin-bottom: 40px;
+    }
+
+    .featured iframe {
+      width: 100%;
+      height: 500px;
+      border-radius: 10px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card iframe {
+      width: 100%;
+      height: 200px;
+    }
+
+    .card h3 {
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      color: #777;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .featured iframe {
+        height: 250px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="./assets/images/logo.png" alt="logo">
+      </a>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academy.html">BAP Academy</a></li>
+        <li><a href="podcast.html">Watch Our Episodes</a></li>
+        <li><a href="donate.html">Support Our Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- TITLE -->
+  <h1 class="title">Beyond Adversity BTC Podcast</h1>
+  <p class="subtitle">All episodes on Bitcoin, education, and financial freedom</p>
+
+  <!-- FEATURED -->
+  <div class="featured">
+    <iframe src="https://www.youtube.com/embed/kPwI7GJl2jA" allowfullscreen></iframe>
+  </div>
+
+  <!-- EPISODES GRID -->
+  <div class="grid">
+
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/kPwI7GJl2jA" allowfullscreen></iframe>
+      <h3>Episode 1</h3>
+    </div>
+
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/0nO7gZnmBY0" allowfullscreen></iframe>
+      <h3>Episode 2</h3>
+    </div>
+
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/YoMG9y5pcZs" allowfullscreen></iframe>
+      <h3>Episode 3</h3>
+    </div>
+
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/UW-mcTj8TeQ" allowfullscreen></iframe>
+      <h3>Episode 4</h3>
+    </div>
+
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/8_8ZZSZzpuk" allowfullscreen></iframe>
+      <h3>Episode 5</h3>
+    </div>
+
+    <div class="card">
+      <div class="card">
+  <iframe 
+    src="https://www.youtube.com/embed/8hl8v_wRkgo" 
+    allowfullscreen>
+  </iframe>
+  <h3>Episode 6</h3>
+</div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Beyond Adversity BTC Podcast</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

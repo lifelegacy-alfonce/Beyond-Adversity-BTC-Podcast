@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAP Academy | Beyond Adversity BTC Podcast</title>
+
+  <link rel="icon" href="./favicon.svg">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url('./assets/images/logo.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.78);
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* NAVBAR IMPROVED */
+    header {
+      background: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      border-radius: 12px;
+      position: sticky;
+      top: 10px;
+      z-index: 1000;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #FFC727;
+    }
+
+    .logo img {
+      width: 70px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 70px 20px 30px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      color: #FFC727;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 17px;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    /* SECTION GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #FFC727;
+    }
+
+    .card h3 {
+      color: #FFC727;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #ddd;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* HIGHLIGHT */
+    .highlight {
+      margin-top: 40px;
+      padding: 25px;
+      border: 1px solid #FFC727;
+      border-radius: 12px;
+      background: rgba(255, 199, 39, 0.08);
+      text-align: center;
+    }
+
+    .highlight h2 {
+      color: #FFC727;
+      margin-bottom: 10px;
+    }
+
+    /* SOCIAL */
+    .social {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .social a {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #000;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .social a:hover {
+      background: #FFC727;
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+  <div class="container">
+
+    <!-- NAVBAR -->
+    <header>
+      <a class="logo" href="index.html">
+        <img src="./assets/images/logo.png" alt="BAP Logo">
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="academy.html">BAP Academy</a></li>
+          <li><a href="podcast.html">Watch Our Episodes</a></li>
+          <li><a href="contact.html">Team</a></li>
+          <li><a href="donate.html">Support Our Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>BAP Academy</h1>
+      <p>
+        BAP Academy is the education and impact arm of Beyond Adversity BTC Podcast — building financially aware, technologically empowered youth through Bitcoin education, storytelling, and real-world bootcamps across Kenya.
+      </p>
+    </section>
+
+    <!-- IMPACT -->
+    <section class="grid">
+
+      <div class="card">
+        <h3>📍 Physical Cohort – Migori</h3>
+        <p>
+          We introduced 12+ youths in rural Migori to Bitcoin, financial literacy, and digital skills through our first physical academy cohort.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>👶 Kids Bitcoin Bootcamp</h3>
+        <p>
+          Launched a Bitcoin bootcamp for kids in rural communities, impacting 60+ children and teaching foundational money principles and technology awareness.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🚀 Upcoming Bootcamps</h3>
+        <p>
+          Two new kids bootcamps are scheduled for August and December to expand access to Bitcoin education in rural Kenya.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎓 Youth Cohorts (16+)</h3>
+        <p>
+          Planning 3 physical youth cohorts for ages 16+ focusing on Bitcoin, entrepreneurship, and digital independence.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- MISSION / VISION -->
+    <div class="highlight">
+      <h2>Mission</h2>
+      <p>To empower African youth with Bitcoin education, digital skills, and financial independence through grassroots learning programs.</p>
+    </div>
+
+    <div class="highlight">
+      <h2>Vision</h2>
+      <p>A financially free, educated, and resilient generation of African youth using Bitcoin and technology to transform their communities.</p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="social">
+      <p>Follow our journey and updates:</p>
+      <a href="https://x.com/b_adversity" target="_blank">Follow @b_adversity on X</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 BAP Academy | Beyond Adversity BTC Podcast</p>
+    </footer>
+
+  </div>
+
+</div>
+
+</body>
+</html>
